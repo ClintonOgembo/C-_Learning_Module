@@ -1,0 +1,15 @@
+C:\Users\USER\Desktop\C#_Module\bin\Debug\net8.0\C#_Module.exe
+C:\Users\USER\Desktop\C#_Module\bin\Debug\net8.0\C#_Module.deps.json
+C:\Users\USER\Desktop\C#_Module\bin\Debug\net8.0\C#_Module.runtimeconfig.json
+C:\Users\USER\Desktop\C#_Module\bin\Debug\net8.0\C#_Module.dll
+C:\Users\USER\Desktop\C#_Module\bin\Debug\net8.0\C#_Module.pdb
+C:\Users\USER\Desktop\C#_Module\obj\Debug\net8.0\C#_Module.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\C#_Module\obj\Debug\net8.0\C#_Module.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\C#_Module\obj\Debug\net8.0\C#_Module.AssemblyInfo.cs
+C:\Users\USER\Desktop\C#_Module\obj\Debug\net8.0\C#_Module.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\C#_Module\obj\Debug\net8.0\C#_Module.sourcelink.json
+C:\Users\USER\Desktop\C#_Module\obj\Debug\net8.0\C#_Module.dll
+C:\Users\USER\Desktop\C#_Module\obj\Debug\net8.0\refint\C#_Module.dll
+C:\Users\USER\Desktop\C#_Module\obj\Debug\net8.0\C#_Module.pdb
+C:\Users\USER\Desktop\C#_Module\obj\Debug\net8.0\C#_Module.genruntimeconfig.cache
+C:\Users\USER\Desktop\C#_Module\obj\Debug\net8.0\ref\C#_Module.dll
