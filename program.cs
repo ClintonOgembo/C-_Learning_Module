@@ -133,7 +133,7 @@ class Program
 
         System.Console.WriteLine();
 
-        System.Console.WriteLine(GetMax(31, 20));
+        System.Console.WriteLine(GetMax(31, 60, 41));
 
 
     }
@@ -150,16 +150,20 @@ class Program
         return result;
     }
 
-    static int GetMax(int x, int y)
+    static int GetMax(int x, int y, int z)
     {
         int result;
-        if (x > y)
+        if (x >= y && x >= z)
         {
             result = x;
         }
-        else
+        if (y >= x && y >= z)
         {
             result = y;
+        }
+        else
+        {
+            result = z;
         }
 
         return result;
