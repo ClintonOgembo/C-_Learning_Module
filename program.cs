@@ -1,6 +1,6 @@
 ﻿class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
         Console.WriteLine("Ready to learn C #");
@@ -50,6 +50,23 @@
         {
             System.Console.WriteLine("The number could not be converted to a byte");
         }
+
+        // taking inputs
+        Console.Write("Enter your name: ");
+        string name = Console.ReadLine()!;
+        Console.Write("Enter your age: ");
+        string age = Console.ReadLine()!;
+        Console.WriteLine("Hello " + name + " you are " + age + " old.");
+
+        // simle calculator
+        Console.Write("Enter first number: ");
+        var val1 = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Enter second number: ");
+        var val2 = Convert.ToDouble(Console.ReadLine());
+        System.Console.WriteLine(val1 + val2);
+        System.Console.WriteLine(val1 * val2);
+        System.Console.WriteLine(val1 / val2);
+        System.Console.WriteLine(val1 - val2);
 
     }
 }
