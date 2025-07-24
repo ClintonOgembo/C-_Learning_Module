@@ -143,37 +143,65 @@ class Program
         // }
 
         // while loops
-        int index = 1;
-        while (index <= 5)
-        {
-            System.Console.WriteLine(index);
-            index++;
-        }
-        System.Console.WriteLine();
+        // int index = 1;
+        // while (index <= 5)
+        // {
+        //     System.Console.WriteLine(index);
+        //     index++;
+        // }
+        // System.Console.WriteLine();
 
-        // do...while loop
-        int num1 = 5;
-        do
-        {
-            System.Console.WriteLine(num1);
-            num1++;
-        } while (num1 <= 4);
+        // // do...while loop
+        // int num1 = 5;
+        // do
+        // {
+        //     System.Console.WriteLine(num1);
+        //     num1++;
+        // } while (num1 <= 4);
 
         // GUESSING GAME:
         string secrectWord = "cow";
         string guess = "";
+        int attempts = 0;
+        int maxAttempts = 3;
         // while (guess != secrectWord)
         // {
         //     System.Console.WriteLine("Enter guess: ");
         //     guess = Console.ReadLine()!;
         // }
         // System.Console.WriteLine("You Win");
+
+        // do ... while loop
+        // do
+        // {
+        //     Console.WriteLine("Enter guess: ");
+        //     guess = Console.ReadLine()!;
+        // } while (guess != secrectWord);
+
         do
         {
-            System.Console.WriteLine("Enter guess: ");
+            System.Console.Write("Enter a guess: ");
             guess = Console.ReadLine()!;
-        } while (guess != secrectWord);
-        System.Console.WriteLine("You Win");
+            attempts++;
+
+            if (guess == secrectWord)
+            {
+                System.Console.WriteLine("You Win");
+                break;
+            }
+            else if (attempts < maxAttempts)
+            {
+                System.Console.WriteLine("Wrong Guess! try again");
+            }
+
+        } while (attempts < maxAttempts);
+
+        if (guess != secrectWord)
+        {
+            System.Console.WriteLine("finished attempts. correct word was: " + secrectWord);
+        }
+
+
 
         // // calling methods
         // System.Console.WriteLine();
