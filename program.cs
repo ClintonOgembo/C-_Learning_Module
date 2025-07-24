@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Reflection.Metadata.Ecma335;
+using System.Runtime.InteropServices;
 
 class Program
 {
@@ -60,15 +61,36 @@ class Program
         // string age = Console.ReadLine()!;
         // Console.WriteLine("Hello " + name + " you are " + age + " old.");
 
-        // // simle calculator
-        // Console.Write("Enter first number: ");
-        // var val1 = Convert.ToDouble(Console.ReadLine());
-        // Console.Write("Enter second number: ");
-        // var val2 = Convert.ToDouble(Console.ReadLine());
-        // System.Console.WriteLine(val1 + val2);
-        // System.Console.WriteLine(val1 * val2);
-        // System.Console.WriteLine(val1 / val2);
-        // System.Console.WriteLine(val1 - val2);
+        // simle calculator
+        Console.Write("Enter first number: ");
+        var val1 = Convert.ToDouble(Console.ReadLine());
+
+        System.Console.Write("Enter the operator: ");
+        string oper = Console.ReadLine()!;
+
+        Console.Write("Enter second number: ");
+        var val2 = Convert.ToDouble(Console.ReadLine());
+
+        if (oper == "+")
+        {
+            System.Console.WriteLine(val1 + val2);
+        }
+        else if (oper == "*")
+        {
+            System.Console.WriteLine(val1 * val2);
+        }
+        else if (oper == "/")
+        {
+            System.Console.WriteLine(val1 / val2);
+        }
+        else if (oper == "-")
+        {
+            System.Console.WriteLine(val1 - val2);
+        }
+        else
+        {
+            System.Console.WriteLine("Invalid operator...!");
+        }
 
         // // simple madlib
         // string color, pluralNoun, celebrity;
@@ -120,6 +142,14 @@ class Program
             System.Console.WriteLine("You are not a male or tall or both");
         }
 
+        // while loops
+        int index = 1;
+        while (index <= 5)
+        {
+            System.Console.WriteLine(index);
+            index++;
+        }
+
         // calling methods
         System.Console.WriteLine();
 
@@ -134,6 +164,10 @@ class Program
         System.Console.WriteLine();
 
         System.Console.WriteLine(GetMax(31, 60, 41));
+
+        System.Console.WriteLine();
+
+        System.Console.WriteLine(GetDay(2));
 
 
     }
@@ -168,5 +202,34 @@ class Program
 
         return result;
     }
+
+    // switch statement in a method
+    static string GetDay(int numDay)
+    {
+        string dayName;
+
+        switch (numDay)
+        {
+            case 0:
+                dayName = "Sunday";
+                break;
+            case 1:
+                dayName = "Mon";
+                break;
+            case 2:
+                dayName = "Tue";
+                break;
+            case 3:
+                dayName = "Wen";
+                break;
+            default:
+                dayName = "Invalid number";
+                break;
+        }
+        return dayName;
+
+    }
+
+
 }
 
