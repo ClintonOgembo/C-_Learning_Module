@@ -159,11 +159,11 @@ class Program
         //     num1++;
         // } while (num1 <= 4);
 
-        // GUESSING GAME:
-        string secrectWord = "cow";
-        string guess = "";
-        int attempts = 0;
-        int maxAttempts = 3;
+        // // GUESSING GAME:
+        // string secrectWord = "cow";
+        // string guess = "";
+        // int attempts = 0;
+        // int maxAttempts = 3;
         // while (guess != secrectWord)
         // {
         //     System.Console.WriteLine("Enter guess: ");
@@ -178,30 +178,41 @@ class Program
         //     guess = Console.ReadLine()!;
         // } while (guess != secrectWord);
 
-        do
-        {
-            System.Console.Write("Enter a guess: ");
-            guess = Console.ReadLine()!;
-            attempts++;
+        // do
+        // {
+        //     System.Console.Write("Enter a guess: ");
+        //     guess = Console.ReadLine()!;
+        //     attempts++;
 
-            if (guess == secrectWord)
-            {
-                System.Console.WriteLine("You Win");
-                break;
-            }
-            else if (attempts < maxAttempts)
-            {
-                System.Console.WriteLine("Wrong Guess! try again");
-            }
+        //     if (guess == secrectWord)
+        //     {
+        //         System.Console.WriteLine("You Win");
+        //         break;
+        //     }
+        //     else if (attempts < maxAttempts)
+        //     {
+        //         System.Console.WriteLine("Wrong Guess! try again");
+        //     }
 
-        } while (attempts < maxAttempts);
+        // } while (attempts < maxAttempts);
 
-        if (guess != secrectWord)
-        {
-            System.Console.WriteLine("finished attempts. correct word was: " + secrectWord);
-        }
+        // if (guess != secrectWord)
+        // {
+        //     System.Console.WriteLine("finished attempts. correct word was: " + secrectWord);
+        // }
 
+        // for..loop
+        // for (int i = 1; i <= 5; i++)
+        // {
+        //     System.Console.WriteLine(i);
+        // }
 
+        // // using for loop to go thru array elements
+        // int[] numbers = { 4, 6, 8, 10, 12 };
+        // for (int i = 0; i < numbers.Length; i++)
+        // {
+        //     Console.WriteLine(numbers[i]);
+        // }
 
         // // calling methods
         // System.Console.WriteLine();
