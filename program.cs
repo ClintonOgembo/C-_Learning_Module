@@ -1,4 +1,5 @@
 ﻿using System.Reflection.Metadata.Ecma335;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 class Program
@@ -121,6 +122,15 @@ class Program
         // friends[0] = "john";
         // friends[1] = "james";
 
+        // 2 dimensions array
+        // string[,] animals = {
+        //     {"weaver", "eagle"},
+        //     {"crocodile", "snake"},
+        //     {"tilapia","madfish"}
+        // };
+        // System.Console.WriteLine(animals[1, 1]);
+
+
         // //if statement
         // bool isMale = false;
         // bool isTall = true;
@@ -233,6 +243,34 @@ class Program
 
         // System.Console.WriteLine(GetDay(2));
 
+        // GetPow(3, 3);
+
+        // objects of class Book
+        Book book1 = new Book("Laws", "Clinton", 440);
+        Book book2 = new Book("mat", "Sam", 54);
+
+        System.Console.WriteLine(book1.author);
+        book2.author = "jacob";
+        System.Console.WriteLine(book2.author);
+
+        System.Console.WriteLine(book1.HasHonors());
+        System.Console.WriteLine(book2.HasHonors());
+
+        Movies movie1 = new Movies("Avengers", "Trevor", "PG-13");
+        Movies movie2 = new Movies("Dexter", "phil", "P");
+        // ratings can only be (G, PG, PG-13, R, NR)
+
+        System.Console.WriteLine(movie1.Rating);
+        System.Console.WriteLine(movie2.Rating);
+
+        Chef chef1 = new Chef();
+        chef1.MakeChicken();
+        chef1.MakeSpecial();
+
+        ItalianChef chef2 = new ItalianChef();
+        chef2.MakeChicken();
+        chef2.MakePaster();
+        chef2.MakeSpecial();
 
     }
 
@@ -292,6 +330,12 @@ class Program
         }
         return dayName;
 
+    }
+
+    // Exponent Method
+    static void GetPow(int baseNum, int powNum)
+    {
+        System.Console.WriteLine(Math.Pow(baseNum, powNum));
     }
 
 
