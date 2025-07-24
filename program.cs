@@ -62,35 +62,35 @@ class Program
         // Console.WriteLine("Hello " + name + " you are " + age + " old.");
 
         // simle calculator
-        Console.Write("Enter first number: ");
-        var val1 = Convert.ToDouble(Console.ReadLine());
+        // Console.Write("Enter first number: ");
+        // var val1 = Convert.ToDouble(Console.ReadLine());
 
-        System.Console.Write("Enter the operator: ");
-        string oper = Console.ReadLine()!;
+        // System.Console.Write("Enter the operator: ");
+        // string oper = Console.ReadLine()!;
 
-        Console.Write("Enter second number: ");
-        var val2 = Convert.ToDouble(Console.ReadLine());
+        // Console.Write("Enter second number: ");
+        // var val2 = Convert.ToDouble(Console.ReadLine());
 
-        if (oper == "+")
-        {
-            System.Console.WriteLine(val1 + val2);
-        }
-        else if (oper == "*")
-        {
-            System.Console.WriteLine(val1 * val2);
-        }
-        else if (oper == "/")
-        {
-            System.Console.WriteLine(val1 / val2);
-        }
-        else if (oper == "-")
-        {
-            System.Console.WriteLine(val1 - val2);
-        }
-        else
-        {
-            System.Console.WriteLine("Invalid operator...!");
-        }
+        // if (oper == "+")
+        // {
+        //     System.Console.WriteLine(val1 + val2);
+        // }
+        // else if (oper == "*")
+        // {
+        //     System.Console.WriteLine(val1 * val2);
+        // }
+        // else if (oper == "/")
+        // {
+        //     System.Console.WriteLine(val1 / val2);
+        // }
+        // else if (oper == "-")
+        // {
+        //     System.Console.WriteLine(val1 - val2);
+        // }
+        // else
+        // {
+        //     System.Console.WriteLine("Invalid operator...!");
+        // }
 
         // // simple madlib
         // string color, pluralNoun, celebrity;
@@ -121,26 +121,26 @@ class Program
         // friends[0] = "john";
         // friends[1] = "james";
 
-        //if statement
-        bool isMale = false;
-        bool isTall = true;
+        // //if statement
+        // bool isMale = false;
+        // bool isTall = true;
 
-        if (isMale && isTall)
-        {
-            System.Console.WriteLine("You are a male and Tall");
-        }
-        else if (isMale && !isTall)
-        {
-            System.Console.WriteLine("You ara a short male");
-        }
-        else if (!isMale && isTall)
-        {
-            System.Console.WriteLine("You ara a tall and not male");
-        }
-        else
-        {
-            System.Console.WriteLine("You are not a male or tall or both");
-        }
+        // if (isMale && isTall)
+        // {
+        //     System.Console.WriteLine("You are a male and Tall");
+        // }
+        // else if (isMale && !isTall)
+        // {
+        //     System.Console.WriteLine("You ara a short male");
+        // }
+        // else if (!isMale && isTall)
+        // {
+        //     System.Console.WriteLine("You ara a tall and not male");
+        // }
+        // else
+        // {
+        //     System.Console.WriteLine("You are not a male or tall or both");
+        // }
 
         // while loops
         int index = 1;
@@ -149,25 +149,50 @@ class Program
             System.Console.WriteLine(index);
             index++;
         }
-
-        // calling methods
         System.Console.WriteLine();
 
-        SayHi("Clinton", 34);
+        // do...while loop
+        int num1 = 5;
+        do
+        {
+            System.Console.WriteLine(num1);
+            num1++;
+        } while (num1 <= 4);
 
-        System.Console.WriteLine();
+        // GUESSING GAME:
+        string secrectWord = "cow";
+        string guess = "";
+        // while (guess != secrectWord)
+        // {
+        //     System.Console.WriteLine("Enter guess: ");
+        //     guess = Console.ReadLine()!;
+        // }
+        // System.Console.WriteLine("You Win");
+        do
+        {
+            System.Console.WriteLine("Enter guess: ");
+            guess = Console.ReadLine()!;
+        } while (guess != secrectWord);
+        System.Console.WriteLine("You Win");
 
-        Console.WriteLine(Cube(5));
-        int cubedNumber = Cube(2);
-        System.Console.WriteLine(cubedNumber);
+        // // calling methods
+        // System.Console.WriteLine();
 
-        System.Console.WriteLine();
+        // SayHi("Clinton", 34);
 
-        System.Console.WriteLine(GetMax(31, 60, 41));
+        // System.Console.WriteLine();
 
-        System.Console.WriteLine();
+        // Console.WriteLine(Cube(5));
+        // int cubedNumber = Cube(2);
+        // System.Console.WriteLine(cubedNumber);
 
-        System.Console.WriteLine(GetDay(2));
+        // System.Console.WriteLine();
+
+        // System.Console.WriteLine(GetMax(31, 60, 41));
+
+        // System.Console.WriteLine();
+
+        // System.Console.WriteLine(GetDay(2));
 
 
     }
