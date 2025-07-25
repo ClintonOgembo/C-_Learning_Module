@@ -43,16 +43,16 @@ class Program
         // // OR
         // int j = int.Parse(s);
 
-        // // try and catch block, helps our code not to crash incase of an exception instead it runs and throws an exception message, 
+        // try and catch block, helps our code not to crash incase of an exception instead it runs and throws an exception message, 
         // try
         // {
-        //     var num = "1234";
-        //     byte c = Convert.ToByte(num);
+        //     var num = "234.0";
+        //     int c = Convert.ToInt32(num);
         //     System.Console.WriteLine(c);
         // }
-        // catch (System.Exception)
+        // catch (Exception e)
         // {
-        //     System.Console.WriteLine("The number could not be converted to a byte");
+        //     System.Console.WriteLine(e.Message);
         // }
 
         // // taking inputs
